@@ -8,8 +8,12 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Initial System",
-  description: "A modern authentication system built with Next.js and FastAPI",
+  title: "Portfolio002000 - Personal Portfolio",
+  description: "A very small personal portfolio showcasing skills, projects, and professional background. Discover my work, expertise, and professional journey.",
+  keywords: "portfolio, web developer, projects, skills, resume, professional",
+  author: "Portfolio002000",
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
 };
 
 export default function RootLayout({
@@ -18,15 +22,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.className} flex flex-col min-h-screen bg-gray-50`}
+        className={`${inter.className} flex flex-col min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 antialiased`}
       >
         <AuthProvider>
           <Header />
-          <main className="flex-grow py-8">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              {children}
+          <main className="flex-grow transition-all duration-300 ease-in-out">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+              <div className="animate-fade-in">
+                {children}
+              </div>
             </div>
           </main>
           <Footer />
