@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Portfolio002000 - Personal Portfolio",
   description: "A very small personal portfolio showcasing skills, projects, and professional background. Discover my work, expertise, and professional journey.",
   keywords: "portfolio, web developer, projects, skills, resume, professional",
-  author: "Portfolio002000",
+  authors: [{ name: "Portfolio002000" }], 
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
 };
