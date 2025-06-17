@@ -1,0 +1,8 @@
+region = "us-east-1"
+customer_name = "three"
+project = "three"
+repository_url = "https://github.com/craffapptest1/default_user_portoflio002000.git"
+branch = "master"
+db_password = "three_password"
+db_username = "postgres"
+db_name = "three_db"
